@@ -1,4 +1,4 @@
-## 2. Classement aux Échecs
+## Classement aux Échecs
 
 Lors de la comparaison des performances entre deux groupes, une erreur courante consiste à les comparer en fonction des meilleurs de chaque groupe, en particulier dans les scénarios dans lesquels l'un des groupes a un nombre d'échantillons significativement plus élevé que l'autre (surreprésenté).
 Un tel exemple est aux échecs, où les gens ont essayé incorrectement de prétendre que les joueuses sont pires que les joueurs parce que si l'on considère les meilleurs joueurs, aucune femme n'a jamais été championne du monde, ou la différence d'Elo (une méthode pour calculer la compétence relative niveaux de joueurs) entre la meilleure femme et le meilleur homme est grande, etc.
@@ -18,7 +18,7 @@ Notez que cela ne fait que souligner l'effet statistique de la simple comparaiso
 Dans cette section, nous explorerons cela dans le contexte des classements d'échecs mentionnés précedemment.
 Aucun code pour vous aider n'est fourni dans le fichier python ; à la place, vous pouvez suivre dans le cahier `chess_ratings.ipynb`.
 
-### 2.1 Charger et nettoyer les données
+### 1 Charger et nettoyer les données
 
 - Complétez `chess_ratings.py:parse_xml()`
 - Complétez `chess_ratings.py:clean_data()`
@@ -38,7 +38,7 @@ Assurez-vous d'obtenir les données suivantes à partir du XML (et de les utilis
 
 Ensuite, complétez `clean_data()`: supprimez les joueurs avec des anniversaires NaN, convertissez les types numériques en type approprié et filtrez les anniversaires `<=2002` (car les scores Elo pour les personnes de < 20 ans peuvent ne pas être fiables).
 
-### 2.2 Comparer les distributions de notes
+### 2 Comparer les distributions de notes
 
 - Complétez `chess_ratings.py:bin_counts()`
 - Complétez les graphiques dans `chess_ratings.ipynb`
@@ -55,7 +55,7 @@ Notez que lors de la définition de vos bacs, vous constaterez que `len(bin_cent
 À l'aide des données regroupées, tracez deux tracés linéaires des données regroupées côte à côte; l'un contenant les décomptes bruts (`"count"`), et l'autre contenant les décomptes normalisés (`"count_norm"`), et M/F devraient être de deux couleurs différentes.
 Assurez-vous d'inclure ces graphiques dans votre cahier lorsque vous soumettez.
 
-### 2.3 Tests de permutation
+### 3 Tests de permutation
 
 - Compléte `chess_ratings.py:PermutationTests.job()`
 - Complétez `chess_ratings.py:sample_two_groups()`
@@ -70,7 +70,7 @@ Une fois terminé, exécutez cette expérience dans le bloc-notes avec au moins 
 Exécutez la cellule qui imprime la différence moyenne obtenue à partir des tests de permutation, ainsi que les différences réelles.
 Assurez-vous d'inclure ces résultats imprimés dans votre notebook lorsque vous les soumettez.
 
-### 2.4 Questions
+### 4 Questions
 
 Répondez à ces questions (1 à 3 phrases chacune) dans la section spécifiée dans `chess_ratings.ipynb` :
 
